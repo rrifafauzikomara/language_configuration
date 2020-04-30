@@ -2,7 +2,7 @@
 
 <p align="left">
  <a href="https://pub.dev/packages/language_configuration">
-    <img alt="Lamp Bottom Navigation" src="https://img.shields.io/pub/v/language_configuration.svg">
+    <img alt="Language Configuration" src="https://img.shields.io/pub/v/language_configuration.svg">
   </a>
 </p>
 
