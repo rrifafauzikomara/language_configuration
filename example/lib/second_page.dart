@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:language_configuration/language_configuration.dart';
 
+import 'locale_keys.dart';
+
 class SecondPage extends StatefulWidget {
   @override
   _SecondPageState createState() => _SecondPageState();
@@ -26,7 +28,7 @@ class _SecondPageState extends State<SecondPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_language.getString("second")),
+        title: Text(_language.getString(LocalKeys.second)),
       ),
       body: Container(
         child: Row(
@@ -35,7 +37,7 @@ class _SecondPageState extends State<SecondPage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text("Indonesian"),
+                Text("${_language.getString(LocalKeys.indonesia)}"),
                 RaisedButton(
                   onPressed: () {
                     setState(() {
@@ -50,7 +52,7 @@ class _SecondPageState extends State<SecondPage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text("English"),
+                Text("${_language.getString(LocalKeys.english)}"),
                 RaisedButton(
                   onPressed: () {
                     setState(() {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:language_configuration/language_configuration.dart';
 
+import 'locale_keys.dart';
 import 'second_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,10 +15,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("${_language.getString("home")}"),
+        title: Text("${_language.getString(LocalKeys.home)}"),
       ),
       body: Center(
-        child: Text("${_language.getString("home")}"),
+        child: Text("${_language.getString(LocalKeys.home)}"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
